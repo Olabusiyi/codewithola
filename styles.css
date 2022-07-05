@@ -1,0 +1,114 @@
+/******* Html elements *******/
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+section {
+  padding: 5%;
+}
+
+h4 {
+  padding-bottom: 2%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******* Title *******/
+#title {
+  background-color: #89CFF0;
+  padding: 3%;
+}
+
+.container-fluid div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+/*******About*******/
+.intro-container {
+  text-align: left;
+}
+
+.profile-pic {
+  border-radius: 100%;
+}
+
+#about-container {
+  display: flex;
+}
+
+.about-box-1 {
+  flex: 1;
+}
+
+.about-box-2 {
+  flex: 1;
+  text-align: left;
+}
+
+.technology-list {
+  display: flex;
+}
+
+.list1 {
+  flex: 1;
+}
+
+.list2 {
+  flex: 1;
+}
+
+/******* Projects *******/
+#projects-container {
+  /* display: flex; */
+  text-align: left;
+}
+
+#projects-container h4{
+  padding-bottom: 1%;
+}
+
+#projects-container div{
+  padding-bottom: 4%;
+}
+
+.project-1 {
+  background-color: #e8f4f8;
+  flex: 1;
+}
+
+.project-2 {
+  background-color: #30AADD;
+  flex: 1;
+  padding-left: 1%;
+}
+
+/******* Contacts *******/
+#contacts-container {
+  text-align: left;
+}
+
+.footer-icons{
+  padding-right: 1%;
+}
+
+.footer-icons:hover{
+ color: #89CFF0
+}
+
+.footer-container{
+  background-color: #D3D3D3;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+.footer-section{
+  padding: 0%;
+}
