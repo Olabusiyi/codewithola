@@ -17,6 +17,13 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/d2bf2b0a0e.js" crossorigin="anonymous"></script>
+
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit-icons.min.js"></script>
   
 </head>
 
@@ -45,7 +52,7 @@
                 <a class="nav-link" href="#about-container">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects-container">Projects</a>
+                <a class="nav-link" href="#sample-container">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contacts-container">Contact Me</a>
@@ -65,10 +72,9 @@
       <div class="">
         <h4>Hi! My name is</h4>
         <h1> Saheed Oladunjoye.</h1>
-        <h1>Full Stack Web Developer</h1>
+        <h1 class="role">Full Stack Web Developer</h1>
 
 
-        <p>I am a professional Web Developer with front end and back end skills based in Canada 🇨🇦 </p>
         <button type="button" class="btn btn-outline-primary"><a href="My Developer Resume.pdf">View My Resume</a></button>
         <button type="button" class="btn btn-outline-primary"><a href="mailto:olabusiyi@gmail.com">Hire Me</a></button>
 
@@ -79,7 +85,7 @@
     </div>
   </section>
 
-  <section>
+  <section> 
     
     <div id="about-container">
       <div class="about-box-1">
@@ -87,14 +93,11 @@
       </div>
       <div class="about-box-2">
         <h4>About Me</h4>
-        <p>My name is Saheed Olabusiyi Oladunjoye, but everyone calls me Ola. I am a self taught Web Developer that loves everything Tech who lives his life on the Internet.
-          My interest in web development started in the Summer of 2021 where I really wanted to just create apps.
-          After looking into the different paths available I found solace in Web Development.
+        <p>My name is Saheed Olabusiyi Oladunjoye, but everyone calls me Ola. I am a self taught Web Developer that loves everything Tech.
+          My interest in web development started in late 2021 where I really wanted to just create apps.</p>
+         <p> After looking into the different paths available I found solace in Web Development.
           I have since been on a journey to becoming the mythical full stack developer!</p>
 
-        <p>Fast forward to today, and I have worked on a number of projects I would love to share with you
-          I am also constantly learning new technologies to help master my skills. My main focus is on finding a job or freelance opportunity where I can put
-          these skills to even better use!</p>
 
         <p>Here are a few of the languages/technologies I have been working on</p>
         <div class="technology-list">
@@ -127,59 +130,72 @@
 
 
   <section>
-    <h4>My Projects</h4>
-    <div id="projects-container">
+<div id="sample-container">
+  <h4>My Projects</h4>
+  <div class="uk-slider-container-offset" uk-slider>
 
+    <div class="uk-position-relative uk-visible-toggle " tabindex="-1">
 
-     
- <div>
-    <h4 class="card-title">Simple Crypto Hub</h4>
-    <p class="card-text"> Developed a JavaScript Web App hosted on Heroku using HTML, CSS, Bootstrap, JavaScript, DOM, Node.js, GIT, Coingecko API, Embedded JavaScript templates, Async functions, 
-      etc. to develop a platform to  give users a one stop shop for everything crypto currency related, including names of coins, market caps market colume, news, trendng coins and fundamental analysis
-       on the crypto currency market. </p>
-  
-    <a href="https://github.com/Olabusiyi/cryptohub" class="btn btn-secondary">Code</a>
-    <a href="https://shrouded-dawn-27659.herokuapp.com/" class="btn btn-primary">Demo</a>
-  </div>
+        <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
+            <li>
 
-<div>
-<h4 class="card-title">Drum Kit</h4>
-<p class="card-text">A front facing website designed to produce a digital concept of a drum set. 
-  This project helped practice the use of the DOM, set time out functions, playing sounds with javascript, operators, etc. This project is hosted on github and was Developed
-using HTML, CSS, Javascript, etc</p>
-  <a href="https://github.com/Olabusiyi/drumkit/tree/main" class="btn btn-secondary">Code</a>
-<a href="https://olabusiyi.github.io/drumkit/" class="btn btn-primary">Demo</a>
+                      <div class="project-card">
+                        <h3>Simple Crypto Hub</h3>
+                        <p class="card-text"> Developed a JavaScript Web App hosted on Heroku using HTML, CSS, Bootstrap, JavaScript, DOM, Node.js, Coingecko API, Embedded JavaScript templates, 
+                          etc. to develop a platform to  give users a one stop shop for everything crypto.</p>
+                          <a href="https://shrouded-dawn-27659.herokuapp.com/"><i class="project-icons fa fa-solid fa-laptop-code fa-2x"></i></a>
+                          <a href="https://github.com/Olabusiyi/cryptohub"><i class="project-icons fa-brands fab fa-github fa-2x"></i></a>   
+                    </div>
+                  
+            </li>
+            <li>
+              <div class="project-card">
+                <h3>Drum Kit</h3>
+                <p class="card-text">A front facing website designed to produce a digital concept of a drum set. 
+                  This project helped practice the use of the DOM, set time out functions, playing sounds with javascript, operators, etc. Developed
+                using HTML, CSS, Javascript, etc</p>
+                  <a href="https://olabusiyi.github.io/drumkit/"><i class="project-icons fa fa-solid fa-laptop-code fa-2x"></i></a>
+                  <a href="https://github.com/Olabusiyi/drumkit/tree/main"><i class="project-icons fa-brands fab fa-github fa-2x"></i></a>   
+            </div>
+          
+            </li>
+            <li>
+              <div class="project-card">
+                <h3>Newsletter Signup</h3>
+                <p class="card-text">Developed a JavaScript Web App which is hosted on Heroku using HTML, CSS, Bootstrap, Javascript, Mailchimp API, Node.js, etc. with the primary intention to gather and store user information with the 
+                  help of Mailchimp API.</p>
+                  <a href="https://fast-gorge-34948.herokuapp.com/"><i class="project-icons fa fa-solid fa-laptop-code fa-2x"></i></a>
+                  <a href="https://github.com/Olabusiyi/newslettersignup"><i class="project-icons fa-brands fab fa-github fa-2x"></i></a>   
+            </div>
+            </li>
+            <li>
+              <div class="project-card">
+                <h3>Simons Game</h3>
+                <p class="card-text">A replica of the popular short-term memory skill invented by Ralph H. Baer and Howard J. Morrison in the 90's! Designed & Developed using HTML, CSS, JavaScript, jQuery.</p>
+                  <a href="https://github.com/Olabusiyi/newslettersignup"><i class="project-icons fa fa-solid fa-laptop-code fa-2x"></i></a>
+                  <a href="https://github.com/Olabusiyi/simonsgame"><i class="project-icons fa-brands fab fa-github fa-2x"></i></a>   
+            </div>
+            </li>
+            <li>
+              <div class="project-card">
+                <h3>Dice Game</h3>
+                <p class="card-text"> A simple game designed to be played with 2 friends, that can either result in a win, loss or draw. This project was designed primarily with the aim of utilizing randomization in a real-life scenario 
+                  which can be played with a simple refresh</p>
+                  <a href="https://olabusiyi.github.io/dicegame/"><i class="project-icons fa fa-solid fa-laptop-code fa-2x"></i></a>
+                  <a href="https://github.com/Olabusiyi/dicegame"><i class="project-icons fa-brands fab fa-github fa-2x"></i></a>   
+            </div>
+            </li>
+        </ul>
 
-</div>
-
-<div>
-  <h4 class="card-title">Newsletter Signup</h4>
-  <p class="card-text">Developed a JavaScript Web App which is hosted on Heroku using HTML, CSS, Bootstrap, Javascript, Mailchimp API, Node.js, etc. with the primary intention to gather user information as a means of storing it 
-    for future marketing opportunities. This user information is stored on the MailChimp servers and available whenever needed.</p>
-  
-  <a href="https://github.com/Olabusiyi/newslettersignup" class="btn btn-secondary">Code</a>
-  <a href="https://fast-gorge-34948.herokuapp.com/" class="btn btn-primary">Demo</a>
-</div>
-
-<div>
-  <h4 class="card-title">Simon Game</h4>
-  <HTML, class="card-text"> A replica of the popular short-term memory skill invented by Ralph H. Baer and Howard J. Morrison in the 90's! Designed & Developed using HTML, CSS, JavaScript, jQuery.</p>
-  <a href="https://github.com/Olabusiyi/simonsgame" class="btn btn-secondary">Code</a>
-  <a href="https://olabusiyi.github.io/simonsgame/" class="btn btn-primary">Demo</a>
-</div>
-
-<div>
-  <h4 class="card-title">Dice Game</h4>
-  <p class="card-text"> A simple game designed to be played with 2 friends, that can either result in a win, loss or draw. This project was designed primarily with the aim of utilizing randomization in a real-life scenario 
-    which can be played with a simple refresh</p>
-    <a href="https://github.com/Olabusiyi/dicegame" class="btn btn-secondary">Code</a>
-    <a href="https://olabusiyi.github.io/dicegame/" class="btn btn-primary">Demo</a>
-
-</div>
-
-
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
     </div>
+
+    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+</div>
   </section>
 
 
@@ -199,7 +215,7 @@ using HTML, CSS, Javascript, etc</p>
       <p>Made by Ola : ) </p>
       <p></p>
       <a href="https://github.com/Olabusiyi"><i class="footer-icons fa-brands fab fa-github fa-lg"></i></a>
-      <a href="https://www.linkedin.com/in/saheed-oladunjoye-67754b158/"><i class="footer-icons fa-brands fab fa-linkedin-in"></i></a>
+      <a href="https://www.linkedin.com/in/saheed-ola-oladunjoye-67754b158/"><i class="footer-icons fa-brands fab fa-linkedin-in"></i></a>
       <p></p>
       <p>© Copytight 2022</p>
 

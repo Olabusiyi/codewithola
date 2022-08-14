@@ -8,13 +8,24 @@ section {
   padding: 5%;
 }
 
+
 h4 {
-  padding-bottom: 2%;
+  font-size: 1.25rem !important;
+  color: black;
 }
 
-a {
-  text-decoration: none;
+h3{
+  font-family: "Montserrat";
+  color: black;
 }
+
+
+a {
+  text-decoration: none !important;
+}
+
+
+
 
 /******* Title *******/
 #title {
@@ -34,6 +45,10 @@ a {
 /*******About*******/
 .intro-container {
   text-align: left;
+}
+
+.role{
+  padding-bottom: 2%;
 }
 
 .profile-pic {
@@ -67,9 +82,32 @@ a {
 
 /******* Projects *******/
 #projects-container {
-  /* display: flex; */
+  display: flex;
   text-align: left;
+  color: black;
 }
+
+.project-card {
+  background-color: #D4F1F4;
+  width: 400px;
+  height: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 30px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5% 2% 0% 2%;
+  color: black
+}
+
+.project-card:hover{
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+}
+
+
+.card-text{
+ padding-bottom: 10%;
+}
+
 
 #projects-container h4{
   padding-bottom: 1%;
@@ -78,6 +116,8 @@ a {
 #projects-container div{
   padding-bottom: 4%;
 }
+
+
 
 .project-1 {
   background-color: #e8f4f8;
@@ -90,6 +130,18 @@ a {
   padding-left: 1%;
 }
 
+.project-icons{
+  padding: 4%;
+  color: #0F6CED;
+}
+
+
+
+#sample-container{
+  color: black;
+}
+
+
 /******* Contacts *******/
 #contacts-container {
   text-align: left;
@@ -101,6 +153,7 @@ a {
 
 .footer-icons:hover{
  color: #89CFF0
+ 
 }
 
 .footer-container{
@@ -112,3 +165,4 @@ a {
 .footer-section{
   padding: 0%;
 }
+
